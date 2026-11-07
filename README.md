@@ -30,7 +30,7 @@
 ## 🌟 Módulos del Proyecto
 
 ### 1. Cuaderno Digital Interactivo Argollado
-📄 **Archivo principal:** [`Cuaderno_Movimiento_Ondulatorio.html`](Cuaderno_Movimiento_Ondulatorio.html)
+📄 **Archivo principal:** [`index.html`](index.html) *(o [`Cuaderno_Movimiento_Ondulatorio.html`](Cuaderno_Movimiento_Ondulatorio.html))*
 
 Experiencia de estudio inmersiva que emula físicamente un **cuaderno argollado universitario abierto**:
 - **Portada y Contraportada con Cierre Físico:** El cuaderno inicia **cerrado** mostrando la portada oficial limpia, con el espiral metálico calzado sobre el margen izquierdo. Al avanzar, la portada gira en 3D (`rotateY(-180deg)`) revelando el cuaderno abierto a dos páginas con argollas centrales. Al llegar al final, se cierra con una contraportada del mismo color de fondo uniforme.
@@ -82,7 +82,7 @@ Entorno de simulación cinemática y ondulatoria bidimensional:
 ---
 
 ### 4. Laboratorio de Superposición Cartesiano (Estilo GeoGebra)
-📄 **Archivo:** [`index.html`](index.html)
+📄 **Archivo:** [`superposicion.html`](superposicion.html)
 
 - **Plano Cartesiano Adaptativo:** Reescalamiento independiente en $X$ e $Y$, papel milimetrado configurable, numeración inteligente en potencias de 1, 2 y 5 y soporte Retina/High-DPI.
 - **Gestión Libre de Funciones:** Soporte para ondas sinusoidales, paquetes gaussianos, solitones y trenes de pulsos.
@@ -123,10 +123,11 @@ $$f' = f \left(\frac{v \pm v_O}{v \mp v_S}\right)$$
 
 ```text
 Movimiento ondulatorio/
-├── Cuaderno_Movimiento_Ondulatorio.html # Cuaderno interactivo digital argollado (Suite completa)
+├── index.html                         # Cuaderno Interactivo Principal (Punto de entrada GitHub Pages)
+├── Cuaderno_Movimiento_Ondulatorio.html # Copia del Cuaderno Interactivo Digital
 ├── OndasEstacionarias.html             # Laboratorio de Ondas Estacionarias con extremos fijos
 ├── EfectoDoppler.html                 # Laboratorio de Efecto Doppler acústico
-├── index.html                         # Laboratorio de Superposición con plano estilo GeoGebra
+├── superposicion.html                 # Laboratorio de Superposición con plano estilo GeoGebra
 ├── INFORME_ONDAS_ESTACIONARIAS.md     # Informe técnico-pedagógico de ondas estacionarias
 ├── INFORME_EFECTO_DOPPLER.md          # Informe técnico-pedagógico de efecto Doppler
 ├── README.md                          # Este documento
@@ -179,13 +180,13 @@ cd movimiento-ondulatorio
 
 # 3. Abrir el cuaderno interactivo en el navegador
 # En Windows:
-start Cuaderno_Movimiento_Ondulatorio.html
+start index.html
 
 # En macOS:
-open Cuaderno_Movimiento_Ondulatorio.html
+open index.html
 
 # En Linux:
-xdg-open Cuaderno_Movimiento_Ondulatorio.html
+xdg-open index.html
 ```
 
 ### Opción 2: Publicar en GitHub Pages
